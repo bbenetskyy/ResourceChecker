@@ -1,13 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Drawing;
-using System.Data;
-using System.Text;
-using System.Linq;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using DevExpress.XtraEditors;
 
 namespace ResourceChecker.Controls
 {
@@ -16,6 +7,21 @@ namespace ResourceChecker.Controls
         public SettingsControl()
         {
             InitializeComponent();
+        }
+
+        private void SelectFolder_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Save_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Cancel_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

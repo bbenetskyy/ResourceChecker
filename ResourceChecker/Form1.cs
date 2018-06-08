@@ -30,7 +30,7 @@ namespace ResourceChecker
 
         private void navigationFrame_QueryControl(object sender, DevExpress.XtraBars.Navigation.QueryControlEventArgs e)
         {
-            
+            e.Control = settingsControl;
         }
     }
 }
