@@ -1,6 +1,8 @@
 # ResourceChecker
 Simple tool to check if all resources exist at resx files. Show result grapth and summary.
 
+[![CodeFactor](https://www.codefactor.io/repository/github/bbenetskyy/resourcechecker/badge)](https://www.codefactor.io/repository/github/bbenetskyy/resourcechecker)
+
 The main tool goals:
 
 * ❌ Search at all files at selected folder.
@@ -15,6 +17,9 @@ The main tool goals:
 What the symbols mean:
 
 ❌ - Not Done
+
 ✔️ - Done.
+
 ❔ - Could be done, but not mandatory
+
 🐛 - Partically works, but have some bag
