@@ -31,16 +31,16 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SettingsControl));
             this.dataLayoutControl1 = new DevExpress.XtraDataLayout.DataLayoutControl();
-            this.tokenEdit1 = new DevExpress.XtraEditors.TokenEdit();
+            this.lookIn = new DevExpress.XtraEditors.TokenEdit();
             this.SelectFolder = new DevExpress.XtraEditors.SimpleButton();
             this.Cancel = new DevExpress.XtraEditors.SimpleButton();
             this.Save = new DevExpress.XtraEditors.SimpleButton();
-            this.textEdit1 = new DevExpress.XtraEditors.TextEdit();
-            this.textEdit3 = new DevExpress.XtraEditors.TextEdit();
-            this.textEdit7 = new DevExpress.XtraEditors.TextEdit();
-            this.textEdit4 = new DevExpress.XtraEditors.TextEdit();
-            this.textEdit5 = new DevExpress.XtraEditors.TokenEdit();
-            this.textEdit6 = new DevExpress.XtraEditors.RadioGroup();
+            this.findWhat = new DevExpress.XtraEditors.TextEdit();
+            this.lookAt = new DevExpress.XtraEditors.TextEdit();
+            this.checkAt = new DevExpress.XtraEditors.TextEdit();
+            this.skipText = new DevExpress.XtraEditors.TextEdit();
+            this.checkIn = new DevExpress.XtraEditors.TokenEdit();
+            this.skipBy = new DevExpress.XtraEditors.RadioGroup();
             this.settingsModelBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.layoutControlGroup1 = new DevExpress.XtraLayout.LayoutControlGroup();
             this.CheckGroup = new DevExpress.XtraLayout.LayoutControlGroup();
@@ -49,25 +49,25 @@
             this.IgnoreGroup = new DevExpress.XtraLayout.LayoutControlGroup();
             this.SkipConditionControlItem = new DevExpress.XtraLayout.LayoutControlItem();
             this.SkipTextControlItem = new DevExpress.XtraLayout.LayoutControlItem();
-            this.SearchGroup = new DevExpress.XtraLayout.LayoutControlGroup();
-            this.FindWhatControlItem = new DevExpress.XtraLayout.LayoutControlItem();
-            this.LookAtControlItem = new DevExpress.XtraLayout.LayoutControlItem();
-            this.layoutControlItem3 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.LookInControlItem = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem2 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem1 = new DevExpress.XtraLayout.LayoutControlItem();
             this.emptySpaceItem1 = new DevExpress.XtraLayout.EmptySpaceItem();
             this.emptySpaceItem3 = new DevExpress.XtraLayout.EmptySpaceItem();
             this.emptySpaceItem4 = new DevExpress.XtraLayout.EmptySpaceItem();
+            this.SearchGroup = new DevExpress.XtraLayout.LayoutControlGroup();
+            this.FindWhatControlItem = new DevExpress.XtraLayout.LayoutControlItem();
+            this.LookAtControlItem = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlItem3 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.LookInControlItem = new DevExpress.XtraLayout.LayoutControlItem();
             ((System.ComponentModel.ISupportInitialize)(this.dataLayoutControl1)).BeginInit();
             this.dataLayoutControl1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.tokenEdit1.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit3.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit7.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit4.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit5.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit6.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lookIn.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.findWhat.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lookAt.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.checkAt.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.skipText.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.checkIn.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.skipBy.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.settingsModelBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.CheckGroup)).BeginInit();
@@ -76,30 +76,30 @@
             ((System.ComponentModel.ISupportInitialize)(this.IgnoreGroup)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.SkipConditionControlItem)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.SkipTextControlItem)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.SearchGroup)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.FindWhatControlItem)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.LookAtControlItem)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.LookInControlItem)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SearchGroup)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.FindWhatControlItem)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.LookAtControlItem)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.LookInControlItem)).BeginInit();
             this.SuspendLayout();
             // 
             // dataLayoutControl1
             // 
-            this.dataLayoutControl1.Controls.Add(this.tokenEdit1);
+            this.dataLayoutControl1.Controls.Add(this.lookIn);
             this.dataLayoutControl1.Controls.Add(this.SelectFolder);
             this.dataLayoutControl1.Controls.Add(this.Cancel);
             this.dataLayoutControl1.Controls.Add(this.Save);
-            this.dataLayoutControl1.Controls.Add(this.textEdit1);
-            this.dataLayoutControl1.Controls.Add(this.textEdit3);
-            this.dataLayoutControl1.Controls.Add(this.textEdit7);
-            this.dataLayoutControl1.Controls.Add(this.textEdit4);
-            this.dataLayoutControl1.Controls.Add(this.textEdit5);
-            this.dataLayoutControl1.Controls.Add(this.textEdit6);
+            this.dataLayoutControl1.Controls.Add(this.findWhat);
+            this.dataLayoutControl1.Controls.Add(this.lookAt);
+            this.dataLayoutControl1.Controls.Add(this.checkAt);
+            this.dataLayoutControl1.Controls.Add(this.skipText);
+            this.dataLayoutControl1.Controls.Add(this.checkIn);
+            this.dataLayoutControl1.Controls.Add(this.skipBy);
             this.dataLayoutControl1.DataSource = this.settingsModelBindingSource;
             this.dataLayoutControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataLayoutControl1.Location = new System.Drawing.Point(0, 0);
@@ -109,32 +109,32 @@
             this.dataLayoutControl1.TabIndex = 0;
             this.dataLayoutControl1.Text = "dataLayoutControl1";
             // 
-            // tokenEdit1
+            // lookIn
             // 
-            this.tokenEdit1.Location = new System.Drawing.Point(84, 66);
-            this.tokenEdit1.Name = "tokenEdit1";
-            this.tokenEdit1.Properties.DropDownShowMode = DevExpress.XtraEditors.TokenEditDropDownShowMode.Outlook;
-            this.tokenEdit1.Properties.EditMode = DevExpress.XtraEditors.TokenEditMode.TokenList;
-            this.tokenEdit1.Properties.ExportMode = DevExpress.XtraEditors.Repository.ExportMode.Value;
-            this.tokenEdit1.Properties.Separators.AddRange(new string[] {
+            this.lookIn.Location = new System.Drawing.Point(84, 66);
+            this.lookIn.Name = "lookIn";
+            this.lookIn.Properties.DropDownShowMode = DevExpress.XtraEditors.TokenEditDropDownShowMode.Outlook;
+            this.lookIn.Properties.EditMode = DevExpress.XtraEditors.TokenEditMode.TokenList;
+            this.lookIn.Properties.ExportMode = DevExpress.XtraEditors.Repository.ExportMode.Value;
+            this.lookIn.Properties.Separators.AddRange(new string[] {
             ","});
-            this.tokenEdit1.Properties.Tokens.Add(new DevExpress.XtraEditors.TokenEditToken("*.cs", "*.cs"));
-            this.tokenEdit1.Properties.Tokens.Add(new DevExpress.XtraEditors.TokenEditToken("*.ts", "*.ts"));
-            this.tokenEdit1.Properties.Tokens.Add(new DevExpress.XtraEditors.TokenEditToken("*.*", "*.*"));
-            this.tokenEdit1.Properties.Tokens.Add(new DevExpress.XtraEditors.TokenEditToken("*.tmpl.html", "*.tmpl.html"));
-            this.tokenEdit1.Properties.Tokens.Add(new DevExpress.XtraEditors.TokenEditToken("*.html", "*.html"));
-            this.tokenEdit1.Properties.Tokens.Add(new DevExpress.XtraEditors.TokenEditToken("*.js", "*.js"));
-            this.tokenEdit1.Properties.Tokens.Add(new DevExpress.XtraEditors.TokenEditToken("*.c", "*.c"));
-            this.tokenEdit1.Properties.Tokens.Add(new DevExpress.XtraEditors.TokenEditToken("*.cpp", "*.cpp"));
-            this.tokenEdit1.Properties.Tokens.Add(new DevExpress.XtraEditors.TokenEditToken("*.txt", "*.txt"));
-            this.tokenEdit1.Properties.Tokens.Add(new DevExpress.XtraEditors.TokenEditToken("*.xml", "*.xml"));
-            this.tokenEdit1.Properties.Tokens.Add(new DevExpress.XtraEditors.TokenEditToken("*.cshtml", "*.cshtml"));
-            this.tokenEdit1.Properties.Tokens.Add(new DevExpress.XtraEditors.TokenEditToken("*.xaml", "*.xaml"));
-            this.tokenEdit1.Properties.Tokens.Add(new DevExpress.XtraEditors.TokenEditToken("*.resx", "*.resx"));
-            this.tokenEdit1.Properties.UseReadOnlyAppearance = false;
-            this.tokenEdit1.Size = new System.Drawing.Size(584, 20);
-            this.tokenEdit1.StyleController = this.dataLayoutControl1;
-            this.tokenEdit1.TabIndex = 8;
+            this.lookIn.Properties.Tokens.Add(new DevExpress.XtraEditors.TokenEditToken("*.cs", "*.cs"));
+            this.lookIn.Properties.Tokens.Add(new DevExpress.XtraEditors.TokenEditToken("*.ts", "*.ts"));
+            this.lookIn.Properties.Tokens.Add(new DevExpress.XtraEditors.TokenEditToken("*.*", "*.*"));
+            this.lookIn.Properties.Tokens.Add(new DevExpress.XtraEditors.TokenEditToken("*.tmpl.html", "*.tmpl.html"));
+            this.lookIn.Properties.Tokens.Add(new DevExpress.XtraEditors.TokenEditToken("*.html", "*.html"));
+            this.lookIn.Properties.Tokens.Add(new DevExpress.XtraEditors.TokenEditToken("*.js", "*.js"));
+            this.lookIn.Properties.Tokens.Add(new DevExpress.XtraEditors.TokenEditToken("*.c", "*.c"));
+            this.lookIn.Properties.Tokens.Add(new DevExpress.XtraEditors.TokenEditToken("*.cpp", "*.cpp"));
+            this.lookIn.Properties.Tokens.Add(new DevExpress.XtraEditors.TokenEditToken("*.txt", "*.txt"));
+            this.lookIn.Properties.Tokens.Add(new DevExpress.XtraEditors.TokenEditToken("*.xml", "*.xml"));
+            this.lookIn.Properties.Tokens.Add(new DevExpress.XtraEditors.TokenEditToken("*.cshtml", "*.cshtml"));
+            this.lookIn.Properties.Tokens.Add(new DevExpress.XtraEditors.TokenEditToken("*.xaml", "*.xaml"));
+            this.lookIn.Properties.Tokens.Add(new DevExpress.XtraEditors.TokenEditToken("*.resx", "*.resx"));
+            this.lookIn.Properties.UseReadOnlyAppearance = false;
+            this.lookIn.Size = new System.Drawing.Size(584, 20);
+            this.lookIn.StyleController = this.dataLayoutControl1;
+            this.lookIn.TabIndex = 8;
             // 
             // SelectFolder
             // 
@@ -175,75 +175,75 @@
             this.Save.Text = "Save";
             this.Save.Click += new System.EventHandler(this.Save_Click);
             // 
-            // textEdit1
+            // findWhat
             // 
-            this.textEdit1.Location = new System.Drawing.Point(84, 42);
-            this.textEdit1.Name = "textEdit1";
-            this.textEdit1.Size = new System.Drawing.Size(584, 20);
-            this.textEdit1.StyleController = this.dataLayoutControl1;
-            this.textEdit1.TabIndex = 4;
+            this.findWhat.Location = new System.Drawing.Point(84, 42);
+            this.findWhat.Name = "findWhat";
+            this.findWhat.Size = new System.Drawing.Size(584, 20);
+            this.findWhat.StyleController = this.dataLayoutControl1;
+            this.findWhat.TabIndex = 4;
             // 
-            // textEdit3
+            // lookAt
             // 
-            this.textEdit3.Location = new System.Drawing.Point(84, 90);
-            this.textEdit3.Name = "textEdit3";
-            this.textEdit3.Size = new System.Drawing.Size(552, 20);
-            this.textEdit3.StyleController = this.dataLayoutControl1;
-            this.textEdit3.TabIndex = 4;
+            this.lookAt.Location = new System.Drawing.Point(84, 90);
+            this.lookAt.Name = "lookAt";
+            this.lookAt.Size = new System.Drawing.Size(552, 20);
+            this.lookAt.StyleController = this.dataLayoutControl1;
+            this.lookAt.TabIndex = 4;
             // 
-            // textEdit7
+            // checkAt
             // 
-            this.textEdit7.Location = new System.Drawing.Point(84, 182);
-            this.textEdit7.Name = "textEdit7";
-            this.textEdit7.Size = new System.Drawing.Size(584, 20);
-            this.textEdit7.StyleController = this.dataLayoutControl1;
-            this.textEdit7.TabIndex = 4;
+            this.checkAt.Location = new System.Drawing.Point(84, 182);
+            this.checkAt.Name = "checkAt";
+            this.checkAt.Size = new System.Drawing.Size(584, 20);
+            this.checkAt.StyleController = this.dataLayoutControl1;
+            this.checkAt.TabIndex = 4;
             // 
-            // textEdit4
+            // skipText
             // 
-            this.textEdit4.Location = new System.Drawing.Point(84, 248);
-            this.textEdit4.Name = "textEdit4";
-            this.textEdit4.Size = new System.Drawing.Size(584, 20);
-            this.textEdit4.StyleController = this.dataLayoutControl1;
-            this.textEdit4.TabIndex = 4;
+            this.skipText.Location = new System.Drawing.Point(84, 248);
+            this.skipText.Name = "skipText";
+            this.skipText.Size = new System.Drawing.Size(584, 20);
+            this.skipText.StyleController = this.dataLayoutControl1;
+            this.skipText.TabIndex = 4;
             // 
-            // textEdit5
+            // checkIn
             // 
-            this.textEdit5.Location = new System.Drawing.Point(84, 158);
-            this.textEdit5.Name = "textEdit5";
-            this.textEdit5.Properties.DropDownShowMode = DevExpress.XtraEditors.TokenEditDropDownShowMode.Outlook;
-            this.textEdit5.Properties.EditMode = DevExpress.XtraEditors.TokenEditMode.TokenList;
-            this.textEdit5.Properties.Separators.AddRange(new string[] {
+            this.checkIn.Location = new System.Drawing.Point(84, 158);
+            this.checkIn.Name = "checkIn";
+            this.checkIn.Properties.DropDownShowMode = DevExpress.XtraEditors.TokenEditDropDownShowMode.Outlook;
+            this.checkIn.Properties.EditMode = DevExpress.XtraEditors.TokenEditMode.TokenList;
+            this.checkIn.Properties.Separators.AddRange(new string[] {
             ","});
-            this.textEdit5.Properties.Tokens.Add(new DevExpress.XtraEditors.TokenEditToken("*.cs", "*.cs"));
-            this.textEdit5.Properties.Tokens.Add(new DevExpress.XtraEditors.TokenEditToken("*.ts", "*.ts"));
-            this.textEdit5.Properties.Tokens.Add(new DevExpress.XtraEditors.TokenEditToken("*.*", "*.*"));
-            this.textEdit5.Properties.Tokens.Add(new DevExpress.XtraEditors.TokenEditToken("*.tmpl.html", "*.tmpl.html"));
-            this.textEdit5.Properties.Tokens.Add(new DevExpress.XtraEditors.TokenEditToken("*.html", "*.html"));
-            this.textEdit5.Properties.Tokens.Add(new DevExpress.XtraEditors.TokenEditToken("*.js", "*.js"));
-            this.textEdit5.Properties.Tokens.Add(new DevExpress.XtraEditors.TokenEditToken("*.c", "*.c"));
-            this.textEdit5.Properties.Tokens.Add(new DevExpress.XtraEditors.TokenEditToken("*.cpp", "*.cpp"));
-            this.textEdit5.Properties.Tokens.Add(new DevExpress.XtraEditors.TokenEditToken("*.txt", "*.txt"));
-            this.textEdit5.Properties.Tokens.Add(new DevExpress.XtraEditors.TokenEditToken("*.xml", "*.xml"));
-            this.textEdit5.Properties.Tokens.Add(new DevExpress.XtraEditors.TokenEditToken("*.cshtml", "*.cshtml"));
-            this.textEdit5.Properties.Tokens.Add(new DevExpress.XtraEditors.TokenEditToken("*.xaml", "*.xaml"));
-            this.textEdit5.Properties.Tokens.Add(new DevExpress.XtraEditors.TokenEditToken("*.resx", "*.resx"));
-            this.textEdit5.Size = new System.Drawing.Size(584, 20);
-            this.textEdit5.StyleController = this.dataLayoutControl1;
-            this.textEdit5.TabIndex = 4;
+            this.checkIn.Properties.Tokens.Add(new DevExpress.XtraEditors.TokenEditToken("*.cs", "*.cs"));
+            this.checkIn.Properties.Tokens.Add(new DevExpress.XtraEditors.TokenEditToken("*.ts", "*.ts"));
+            this.checkIn.Properties.Tokens.Add(new DevExpress.XtraEditors.TokenEditToken("*.*", "*.*"));
+            this.checkIn.Properties.Tokens.Add(new DevExpress.XtraEditors.TokenEditToken("*.tmpl.html", "*.tmpl.html"));
+            this.checkIn.Properties.Tokens.Add(new DevExpress.XtraEditors.TokenEditToken("*.html", "*.html"));
+            this.checkIn.Properties.Tokens.Add(new DevExpress.XtraEditors.TokenEditToken("*.js", "*.js"));
+            this.checkIn.Properties.Tokens.Add(new DevExpress.XtraEditors.TokenEditToken("*.c", "*.c"));
+            this.checkIn.Properties.Tokens.Add(new DevExpress.XtraEditors.TokenEditToken("*.cpp", "*.cpp"));
+            this.checkIn.Properties.Tokens.Add(new DevExpress.XtraEditors.TokenEditToken("*.txt", "*.txt"));
+            this.checkIn.Properties.Tokens.Add(new DevExpress.XtraEditors.TokenEditToken("*.xml", "*.xml"));
+            this.checkIn.Properties.Tokens.Add(new DevExpress.XtraEditors.TokenEditToken("*.cshtml", "*.cshtml"));
+            this.checkIn.Properties.Tokens.Add(new DevExpress.XtraEditors.TokenEditToken("*.xaml", "*.xaml"));
+            this.checkIn.Properties.Tokens.Add(new DevExpress.XtraEditors.TokenEditToken("*.resx", "*.resx"));
+            this.checkIn.Size = new System.Drawing.Size(584, 20);
+            this.checkIn.StyleController = this.dataLayoutControl1;
+            this.checkIn.TabIndex = 4;
             // 
-            // textEdit6
+            // skipBy
             // 
-            this.textEdit6.Location = new System.Drawing.Point(84, 272);
-            this.textEdit6.Name = "textEdit6";
-            this.textEdit6.Properties.Columns = 1;
-            this.textEdit6.Properties.Items.AddRange(new DevExpress.XtraEditors.Controls.RadioGroupItem[] {
+            this.skipBy.Location = new System.Drawing.Point(84, 272);
+            this.skipBy.Name = "skipBy";
+            this.skipBy.Properties.Columns = 1;
+            this.skipBy.Properties.Items.AddRange(new DevExpress.XtraEditors.Controls.RadioGroupItem[] {
             new DevExpress.XtraEditors.Controls.RadioGroupItem("Contains", "Contains", true, "Contains"),
             new DevExpress.XtraEditors.Controls.RadioGroupItem("StartWith", "StartWith", true, "StartWith"),
             new DevExpress.XtraEditors.Controls.RadioGroupItem("Equal", "Equal", true, "Equal")});
-            this.textEdit6.Size = new System.Drawing.Size(584, 78);
-            this.textEdit6.StyleController = this.dataLayoutControl1;
-            this.textEdit6.TabIndex = 4;
+            this.skipBy.Size = new System.Drawing.Size(584, 78);
+            this.skipBy.StyleController = this.dataLayoutControl1;
+            this.skipBy.TabIndex = 4;
             // 
             // settingsModelBindingSource
             // 
@@ -280,7 +280,7 @@
             // 
             // CheckInContolItem
             // 
-            this.CheckInContolItem.Control = this.textEdit5;
+            this.CheckInContolItem.Control = this.checkIn;
             this.CheckInContolItem.CustomizationFormText = "Check in";
             this.CheckInContolItem.Location = new System.Drawing.Point(0, 0);
             this.CheckInContolItem.Name = "CheckInContolItem";
@@ -291,7 +291,7 @@
             // 
             // CheckAtControlItem
             // 
-            this.CheckAtControlItem.Control = this.textEdit7;
+            this.CheckAtControlItem.Control = this.checkAt;
             this.CheckAtControlItem.CustomizationFormText = "Check at";
             this.CheckAtControlItem.Location = new System.Drawing.Point(0, 24);
             this.CheckAtControlItem.Name = "CheckAtControlItem";
@@ -313,7 +313,7 @@
             // 
             // SkipConditionControlItem
             // 
-            this.SkipConditionControlItem.Control = this.textEdit6;
+            this.SkipConditionControlItem.Control = this.skipBy;
             this.SkipConditionControlItem.CustomizationFormText = "Skip by";
             this.SkipConditionControlItem.Location = new System.Drawing.Point(0, 24);
             this.SkipConditionControlItem.Name = "SkipConditionControlItem";
@@ -324,7 +324,7 @@
             // 
             // SkipTextControlItem
             // 
-            this.SkipTextControlItem.Control = this.textEdit4;
+            this.SkipTextControlItem.Control = this.skipText;
             this.SkipTextControlItem.CustomizationFormText = "Skip text";
             this.SkipTextControlItem.Location = new System.Drawing.Point(0, 0);
             this.SkipTextControlItem.Name = "SkipTextControlItem";
@@ -332,61 +332,6 @@
             this.SkipTextControlItem.Size = new System.Drawing.Size(648, 24);
             this.SkipTextControlItem.Text = "Skip text:";
             this.SkipTextControlItem.TextSize = new System.Drawing.Size(51, 13);
-            // 
-            // SearchGroup
-            // 
-            this.SearchGroup.CustomizationFormText = "Find in Files";
-            this.SearchGroup.ExpandButtonVisible = true;
-            this.SearchGroup.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
-            this.FindWhatControlItem,
-            this.LookAtControlItem,
-            this.layoutControlItem3,
-            this.LookInControlItem});
-            this.SearchGroup.Location = new System.Drawing.Point(0, 0);
-            this.SearchGroup.Name = "SearchGroup";
-            this.SearchGroup.Size = new System.Drawing.Size(672, 116);
-            this.SearchGroup.Text = "Find in Files";
-            // 
-            // FindWhatControlItem
-            // 
-            this.FindWhatControlItem.Control = this.textEdit1;
-            this.FindWhatControlItem.CustomizationFormText = "Find what";
-            this.FindWhatControlItem.Location = new System.Drawing.Point(0, 0);
-            this.FindWhatControlItem.Name = "FindWhatControlItem";
-            this.FindWhatControlItem.Padding = new DevExpress.XtraLayout.Utils.Padding(8, 2, 2, 2);
-            this.FindWhatControlItem.Size = new System.Drawing.Size(648, 24);
-            this.FindWhatControlItem.Text = "Find what:";
-            this.FindWhatControlItem.TextSize = new System.Drawing.Size(51, 13);
-            // 
-            // LookAtControlItem
-            // 
-            this.LookAtControlItem.Control = this.textEdit3;
-            this.LookAtControlItem.CustomizationFormText = "Look at";
-            this.LookAtControlItem.Location = new System.Drawing.Point(0, 48);
-            this.LookAtControlItem.Name = "LookAtControlItem";
-            this.LookAtControlItem.Padding = new DevExpress.XtraLayout.Utils.Padding(8, 2, 2, 2);
-            this.LookAtControlItem.Size = new System.Drawing.Size(616, 26);
-            this.LookAtControlItem.Text = "Look at:";
-            this.LookAtControlItem.TextSize = new System.Drawing.Size(51, 13);
-            // 
-            // layoutControlItem3
-            // 
-            this.layoutControlItem3.Control = this.SelectFolder;
-            this.layoutControlItem3.Location = new System.Drawing.Point(616, 48);
-            this.layoutControlItem3.Name = "layoutControlItem3";
-            this.layoutControlItem3.Size = new System.Drawing.Size(32, 26);
-            this.layoutControlItem3.TextSize = new System.Drawing.Size(0, 0);
-            this.layoutControlItem3.TextVisible = false;
-            // 
-            // LookInControlItem
-            // 
-            this.LookInControlItem.Control = this.tokenEdit1;
-            this.LookInControlItem.Location = new System.Drawing.Point(0, 24);
-            this.LookInControlItem.Name = "LookInControlItem";
-            this.LookInControlItem.Padding = new DevExpress.XtraLayout.Utils.Padding(8, 2, 2, 2);
-            this.LookInControlItem.Size = new System.Drawing.Size(648, 24);
-            this.LookInControlItem.Text = "Look in";
-            this.LookInControlItem.TextSize = new System.Drawing.Size(51, 13);
             // 
             // layoutControlItem2
             // 
@@ -432,6 +377,61 @@
             this.emptySpaceItem4.Text = "emptySpaceItem2";
             this.emptySpaceItem4.TextSize = new System.Drawing.Size(0, 0);
             // 
+            // SearchGroup
+            // 
+            this.SearchGroup.CustomizationFormText = "Find in Files";
+            this.SearchGroup.ExpandButtonVisible = true;
+            this.SearchGroup.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
+            this.FindWhatControlItem,
+            this.LookAtControlItem,
+            this.layoutControlItem3,
+            this.LookInControlItem});
+            this.SearchGroup.Location = new System.Drawing.Point(0, 0);
+            this.SearchGroup.Name = "SearchGroup";
+            this.SearchGroup.Size = new System.Drawing.Size(672, 116);
+            this.SearchGroup.Text = "Find in Files";
+            // 
+            // FindWhatControlItem
+            // 
+            this.FindWhatControlItem.Control = this.findWhat;
+            this.FindWhatControlItem.CustomizationFormText = "Find what";
+            this.FindWhatControlItem.Location = new System.Drawing.Point(0, 0);
+            this.FindWhatControlItem.Name = "FindWhatControlItem";
+            this.FindWhatControlItem.Padding = new DevExpress.XtraLayout.Utils.Padding(8, 2, 2, 2);
+            this.FindWhatControlItem.Size = new System.Drawing.Size(648, 24);
+            this.FindWhatControlItem.Text = "Find what:";
+            this.FindWhatControlItem.TextSize = new System.Drawing.Size(51, 13);
+            // 
+            // LookAtControlItem
+            // 
+            this.LookAtControlItem.Control = this.lookAt;
+            this.LookAtControlItem.CustomizationFormText = "Look at";
+            this.LookAtControlItem.Location = new System.Drawing.Point(0, 48);
+            this.LookAtControlItem.Name = "LookAtControlItem";
+            this.LookAtControlItem.Padding = new DevExpress.XtraLayout.Utils.Padding(8, 2, 2, 2);
+            this.LookAtControlItem.Size = new System.Drawing.Size(616, 26);
+            this.LookAtControlItem.Text = "Look at:";
+            this.LookAtControlItem.TextSize = new System.Drawing.Size(51, 13);
+            // 
+            // layoutControlItem3
+            // 
+            this.layoutControlItem3.Control = this.SelectFolder;
+            this.layoutControlItem3.Location = new System.Drawing.Point(616, 48);
+            this.layoutControlItem3.Name = "layoutControlItem3";
+            this.layoutControlItem3.Size = new System.Drawing.Size(32, 26);
+            this.layoutControlItem3.TextSize = new System.Drawing.Size(0, 0);
+            this.layoutControlItem3.TextVisible = false;
+            // 
+            // LookInControlItem
+            // 
+            this.LookInControlItem.Control = this.lookIn;
+            this.LookInControlItem.Location = new System.Drawing.Point(0, 24);
+            this.LookInControlItem.Name = "LookInControlItem";
+            this.LookInControlItem.Padding = new DevExpress.XtraLayout.Utils.Padding(8, 2, 2, 2);
+            this.LookInControlItem.Size = new System.Drawing.Size(648, 24);
+            this.LookInControlItem.Text = "Look in";
+            this.LookInControlItem.TextSize = new System.Drawing.Size(51, 13);
+            // 
             // SettingsControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -441,13 +441,13 @@
             this.Size = new System.Drawing.Size(692, 411);
             ((System.ComponentModel.ISupportInitialize)(this.dataLayoutControl1)).EndInit();
             this.dataLayoutControl1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.tokenEdit1.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit1.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit3.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit7.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit4.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit5.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.textEdit6.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lookIn.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.findWhat.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lookAt.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.checkAt.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.skipText.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.checkIn.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.skipBy.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.settingsModelBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.CheckGroup)).EndInit();
@@ -456,16 +456,16 @@
             ((System.ComponentModel.ISupportInitialize)(this.IgnoreGroup)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.SkipConditionControlItem)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.SkipTextControlItem)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.SearchGroup)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.FindWhatControlItem)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.LookAtControlItem)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.LookInControlItem)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SearchGroup)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.FindWhatControlItem)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.LookAtControlItem)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.LookInControlItem)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -474,24 +474,24 @@
 
         private DevExpress.XtraDataLayout.DataLayoutControl dataLayoutControl1;
         private DevExpress.XtraLayout.LayoutControlGroup layoutControlGroup1;
-        private DevExpress.XtraEditors.TextEdit textEdit1;
+        private DevExpress.XtraEditors.TextEdit findWhat;
         private System.Windows.Forms.BindingSource settingsModelBindingSource;
         private DevExpress.XtraLayout.LayoutControlItem FindWhatControlItem;
-        private DevExpress.XtraEditors.TextEdit textEdit3;
+        private DevExpress.XtraEditors.TextEdit lookAt;
         private DevExpress.XtraLayout.LayoutControlItem LookAtControlItem;
         private DevExpress.XtraLayout.LayoutControlGroup SearchGroup;
-        private DevExpress.XtraEditors.TextEdit textEdit7;
+        private DevExpress.XtraEditors.TextEdit checkAt;
         private DevExpress.XtraLayout.LayoutControlGroup CheckGroup;
         private DevExpress.XtraLayout.LayoutControlGroup IgnoreGroup;
         private DevExpress.XtraEditors.SimpleButton Cancel;
         private DevExpress.XtraEditors.SimpleButton Save;
-        private DevExpress.XtraEditors.TextEdit textEdit4;
+        private DevExpress.XtraEditors.TextEdit skipText;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem2;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem1;
         private DevExpress.XtraEditors.SimpleButton SelectFolder;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem3;
         private DevExpress.XtraLayout.EmptySpaceItem emptySpaceItem1;
-        private DevExpress.XtraEditors.TokenEdit tokenEdit1;
+        private DevExpress.XtraEditors.TokenEdit lookIn;
         private DevExpress.XtraLayout.LayoutControlItem CheckAtControlItem;
         private DevExpress.XtraLayout.LayoutControlItem SkipConditionControlItem;
         private DevExpress.XtraLayout.LayoutControlItem SkipTextControlItem;
@@ -499,7 +499,7 @@
         private DevExpress.XtraLayout.LayoutControlItem CheckInContolItem;
         private DevExpress.XtraLayout.EmptySpaceItem emptySpaceItem4;
         private DevExpress.XtraLayout.EmptySpaceItem emptySpaceItem3;
-        private DevExpress.XtraEditors.TokenEdit textEdit5;
-        private DevExpress.XtraEditors.RadioGroup textEdit6;
+        private DevExpress.XtraEditors.TokenEdit checkIn;
+        private DevExpress.XtraEditors.RadioGroup skipBy;
     }
 }
