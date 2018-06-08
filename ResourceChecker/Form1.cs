@@ -17,14 +17,20 @@ namespace ResourceChecker
         {
             InitializeComponent();
         }
-        void navBarControl_ActiveGroupChanged(object sender, DevExpress.XtraNavBar.NavBarGroupEventArgs e)
+
+        private void Settings_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            navigationFrame.SelectedPageIndex = navBarControl.Groups.IndexOf(e.Group);
+
         }
-        void barButtonNavigation_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+
+        private void Check_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            int barItemIndex = barSubItemNavigation.ItemLinks.IndexOf(e.Link);
-            navBarControl.ActiveGroup = navBarControl.Groups[barItemIndex];
+
+        }
+
+        private void navigationFrame_QueryControl(object sender, DevExpress.XtraBars.Navigation.QueryControlEventArgs e)
+        {
+            
         }
     }
 }
