@@ -12,6 +12,7 @@ The main tool goals:
 * ❌ Make check at specific files selected by Regex
 * ❌ Checking for each item from a search
 * ❌ Show Grid with marked matched combinations
+* ❌ Also should be possibility to ignore some results
 * ❌❔ Show Chart with results of matching
 
 What the symbols mean:
