@@ -28,8 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.tabbedView = new DevExpress.XtraBars.Docking2010.Views.Tabbed.TabbedView(this.components);
+            ResourceChecker.Models.SettingsModel settingsModel1 = new ResourceChecker.Models.SettingsModel();
+            ResourceChecker.Models.CheckAtModel checkAtModel1 = new ResourceChecker.Models.CheckAtModel();
+            ResourceChecker.Models.CheckAtModel checkAtModel2 = new ResourceChecker.Models.CheckAtModel();
+            ResourceChecker.Models.CheckForModel checkForModel1 = new ResourceChecker.Models.CheckForModel();
+            ResourceChecker.Models.SkipModel skipModel1 = new ResourceChecker.Models.SkipModel();
+            this.tabbedView = new DevExpress.XtraBars.Docking2010.Views.Tabbed.TabbedView();
             this.ribbonControl = new DevExpress.XtraBars.Ribbon.RibbonControl();
             this.skinRibbonGalleryBarItem = new DevExpress.XtraBars.SkinRibbonGalleryBarItem();
             this.Check = new DevExpress.XtraBars.BarButtonItem();
@@ -40,8 +44,8 @@
             this.navigationFrame = new DevExpress.XtraBars.Navigation.NavigationFrame();
             this.CheckPage = new DevExpress.XtraBars.Navigation.NavigationPage();
             this.SettingPage = new DevExpress.XtraBars.Navigation.NavigationPage();
-            this.defaultLookAndFeel1 = new DevExpress.LookAndFeel.DefaultLookAndFeel(this.components);
             this.settingsControl = new ResourceChecker.Controls.SettingsControl();
+            this.defaultLookAndFeel1 = new DevExpress.LookAndFeel.DefaultLookAndFeel();
             ((System.ComponentModel.ISupportInitialize)(this.tabbedView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.navigationFrame)).BeginInit();
@@ -121,11 +125,10 @@
             this.CheckPage,
             this.SettingPage});
             this.navigationFrame.RibbonAndBarsMergeStyle = DevExpress.XtraBars.Docking2010.Views.RibbonAndBarsMergeStyle.Always;
-            this.navigationFrame.SelectedPage = this.CheckPage;
+            this.navigationFrame.SelectedPage = this.SettingPage;
             this.navigationFrame.Size = new System.Drawing.Size(786, 429);
             this.navigationFrame.TabIndex = 0;
             this.navigationFrame.Text = "navigationFrame";
-            this.navigationFrame.QueryControl += new DevExpress.XtraBars.Navigation.QueryControlEventHandler(this.navigationFrame_QueryControl);
             // 
             // CheckPage
             // 
@@ -139,17 +142,29 @@
             this.SettingPage.Name = "SettingPage";
             this.SettingPage.Size = new System.Drawing.Size(786, 429);
             // 
-            // defaultLookAndFeel1
-            // 
-            this.defaultLookAndFeel1.LookAndFeel.SkinName = "Visual Studio 2013 Light";
-            // 
             // settingsControl
             // 
             this.settingsControl.Dock = System.Windows.Forms.DockStyle.Fill;
             this.settingsControl.Location = new System.Drawing.Point(0, 0);
             this.settingsControl.Name = "settingsControl";
+            checkAtModel1.FilesRegex = null;
+            checkAtModel1.Folder = null;
+            settingsModel1.CheckAt = checkAtModel1;
+            checkAtModel2.FilesRegex = null;
+            checkAtModel2.Folder = null;
+            settingsModel1.SearchAt = checkAtModel2;
+            checkForModel1.TextRegex = null;
+            settingsModel1.SearchFor = checkForModel1;
+            skipModel1.Condition = ResourceChecker.Models.Enums.Condition.Contains;
+            skipModel1.Text = null;
+            settingsModel1.Skip = skipModel1;
+            this.settingsControl.SettingsModel = settingsModel1;
             this.settingsControl.Size = new System.Drawing.Size(786, 429);
             this.settingsControl.TabIndex = 1;
+            // 
+            // defaultLookAndFeel1
+            // 
+            this.defaultLookAndFeel1.LookAndFeel.SkinName = "Visual Studio 2013 Light";
             // 
             // Form1
             // 

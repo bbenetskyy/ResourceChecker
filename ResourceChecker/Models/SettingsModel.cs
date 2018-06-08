@@ -8,8 +8,9 @@ namespace ResourceChecker.Models
 {
     public class SettingsModel
     {
-        public CheckAtModel SearchAt { get; set; }
-        public CheckForModel SearchFor { get; set; }
-        public CheckAtModel CheckAt { get; set; }
+        public CheckAtModel SearchAt { get; set; } = new CheckAtModel();
+        public CheckForModel SearchFor { get; set; } = new CheckForModel();
+        public CheckAtModel CheckAt { get; set; } = new CheckAtModel();
+        public SkipModel Skip { get; set; } = new SkipModel();
     }
 }
