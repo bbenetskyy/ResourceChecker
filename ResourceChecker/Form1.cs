@@ -20,17 +20,12 @@ namespace ResourceChecker
 
         private void Settings_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-
+            navigationFrame.SelectedPage = SettingPage;
         }
 
         private void Check_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-
-        }
-
-        private void navigationFrame_QueryControl(object sender, DevExpress.XtraBars.Navigation.QueryControlEventArgs e)
-        {
-            
+            navigationFrame.SelectedPage = CheckPage;
         }
     }
 }
