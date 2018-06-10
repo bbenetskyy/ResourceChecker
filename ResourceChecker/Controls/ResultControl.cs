@@ -19,7 +19,6 @@ namespace ResourceChecker.Controls
             InitializeComponent();
         }
 
-
         public void LoadResults(List<ResultModel> resultModels, bool clear = true)
         {
             if (clear) resultModelBindingSource.Clear();
