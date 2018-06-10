@@ -28,12 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             ResourceChecker.Models.SettingsModel settingsModel1 = new ResourceChecker.Models.SettingsModel();
             ResourceChecker.Models.CheckAtModel checkAtModel1 = new ResourceChecker.Models.CheckAtModel();
             ResourceChecker.Models.CheckAtModel checkAtModel2 = new ResourceChecker.Models.CheckAtModel();
             ResourceChecker.Models.CheckForModel checkForModel1 = new ResourceChecker.Models.CheckForModel();
             ResourceChecker.Models.SkipModel skipModel1 = new ResourceChecker.Models.SkipModel();
-            this.tabbedView = new DevExpress.XtraBars.Docking2010.Views.Tabbed.TabbedView();
+            this.tabbedView = new DevExpress.XtraBars.Docking2010.Views.Tabbed.TabbedView(this.components);
             this.ribbonControl = new DevExpress.XtraBars.Ribbon.RibbonControl();
             this.skinRibbonGalleryBarItem = new DevExpress.XtraBars.SkinRibbonGalleryBarItem();
             this.Check = new DevExpress.XtraBars.BarButtonItem();
@@ -43,13 +44,15 @@
             this.ribbonStatusBar = new DevExpress.XtraBars.Ribbon.RibbonStatusBar();
             this.navigationFrame = new DevExpress.XtraBars.Navigation.NavigationFrame();
             this.CheckPage = new DevExpress.XtraBars.Navigation.NavigationPage();
+            this.resultControl = new ResourceChecker.Controls.ResultControl();
             this.SettingPage = new DevExpress.XtraBars.Navigation.NavigationPage();
             this.settingsControl = new ResourceChecker.Controls.SettingsControl();
-            this.defaultLookAndFeel1 = new DevExpress.LookAndFeel.DefaultLookAndFeel();
+            this.defaultLookAndFeel1 = new DevExpress.LookAndFeel.DefaultLookAndFeel(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.tabbedView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.navigationFrame)).BeginInit();
             this.navigationFrame.SuspendLayout();
+            this.CheckPage.SuspendLayout();
             this.SettingPage.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -132,9 +135,18 @@
             // 
             // CheckPage
             // 
+            this.CheckPage.Controls.Add(this.resultControl);
             this.CheckPage.ImeMode = System.Windows.Forms.ImeMode.On;
             this.CheckPage.Name = "CheckPage";
             this.CheckPage.Size = new System.Drawing.Size(786, 429);
+            // 
+            // resultControl
+            // 
+            this.resultControl.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.resultControl.Location = new System.Drawing.Point(0, 0);
+            this.resultControl.Name = "resultControl";
+            this.resultControl.Size = new System.Drawing.Size(786, 429);
+            this.resultControl.TabIndex = 0;
             // 
             // SettingPage
             // 
@@ -181,6 +193,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.navigationFrame)).EndInit();
             this.navigationFrame.ResumeLayout(false);
+            this.CheckPage.ResumeLayout(false);
             this.SettingPage.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -201,5 +214,6 @@
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup Main;
         private DevExpress.XtraBars.Navigation.NavigationPage SettingPage;
         private Controls.SettingsControl settingsControl;
+        private Controls.ResultControl resultControl;
     }
 }
