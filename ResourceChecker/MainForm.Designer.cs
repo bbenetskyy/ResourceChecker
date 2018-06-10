@@ -1,6 +1,6 @@
 ﻿namespace ResourceChecker
 {
-    partial class Form1
+    partial class MainForm
     {
         /// <summary>
         /// Required designer variable.
@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            ResourceChecker.Models.SettingsModel settingsModel1 = new ResourceChecker.Models.SettingsModel();
-            ResourceChecker.Models.CheckAtModel checkAtModel1 = new ResourceChecker.Models.CheckAtModel();
-            ResourceChecker.Models.CheckAtModel checkAtModel2 = new ResourceChecker.Models.CheckAtModel();
-            ResourceChecker.Models.CheckForModel checkForModel1 = new ResourceChecker.Models.CheckForModel();
-            ResourceChecker.Models.SkipModel skipModel1 = new ResourceChecker.Models.SkipModel();
+            ResourceChecker.Models.SettingsModel settingsModel2 = new ResourceChecker.Models.SettingsModel();
+            ResourceChecker.Models.CheckAtModel checkAtModel3 = new ResourceChecker.Models.CheckAtModel();
+            ResourceChecker.Models.CheckAtModel checkAtModel4 = new ResourceChecker.Models.CheckAtModel();
+            ResourceChecker.Models.CheckForModel checkForModel2 = new ResourceChecker.Models.CheckForModel();
+            ResourceChecker.Models.SkipModel skipModel2 = new ResourceChecker.Models.SkipModel();
             this.tabbedView = new DevExpress.XtraBars.Docking2010.Views.Tabbed.TabbedView(this.components);
             this.ribbonControl = new DevExpress.XtraBars.Ribbon.RibbonControl();
             this.skinRibbonGalleryBarItem = new DevExpress.XtraBars.SkinRibbonGalleryBarItem();
@@ -48,6 +48,7 @@
             this.SettingPage = new DevExpress.XtraBars.Navigation.NavigationPage();
             this.settingsControl = new ResourceChecker.Controls.SettingsControl();
             this.defaultLookAndFeel1 = new DevExpress.LookAndFeel.DefaultLookAndFeel(this.components);
+            this.StartCheking = new DevExpress.XtraBars.BarButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.tabbedView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.navigationFrame)).BeginInit();
@@ -63,9 +64,10 @@
             this.ribbonControl.ExpandCollapseItem,
             this.skinRibbonGalleryBarItem,
             this.Check,
-            this.Settings});
+            this.Settings,
+            this.StartCheking});
             this.ribbonControl.Location = new System.Drawing.Point(0, 0);
-            this.ribbonControl.MaxItemId = 49;
+            this.ribbonControl.MaxItemId = 50;
             this.ribbonControl.MdiMergeStyle = DevExpress.XtraBars.Ribbon.RibbonMdiMergeStyle.Always;
             this.ribbonControl.Name = "ribbonControl";
             this.ribbonControl.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
@@ -106,6 +108,7 @@
             // 
             this.Main.ItemLinks.Add(this.Check);
             this.Main.ItemLinks.Add(this.Settings);
+            this.Main.ItemLinks.Add(this.StartCheking);
             this.Main.Name = "Main";
             // 
             // ribbonStatusBar
@@ -159,18 +162,18 @@
             this.settingsControl.Dock = System.Windows.Forms.DockStyle.Fill;
             this.settingsControl.Location = new System.Drawing.Point(0, 0);
             this.settingsControl.Name = "settingsControl";
-            checkAtModel1.FilesRegex = null;
-            checkAtModel1.Folder = null;
-            settingsModel1.CheckAt = checkAtModel1;
-            checkAtModel2.FilesRegex = null;
-            checkAtModel2.Folder = null;
-            settingsModel1.SearchAt = checkAtModel2;
-            checkForModel1.TextRegex = null;
-            settingsModel1.SearchFor = checkForModel1;
-            skipModel1.Condition = ResourceChecker.Models.Enums.Condition.Contains;
-            skipModel1.Text = null;
-            settingsModel1.Skip = skipModel1;
-            this.settingsControl.SettingsModel = settingsModel1;
+            checkAtModel3.FilesRegex = null;
+            checkAtModel3.Folder = null;
+            settingsModel2.CheckAt = checkAtModel3;
+            checkAtModel4.FilesRegex = null;
+            checkAtModel4.Folder = null;
+            settingsModel2.SearchAt = checkAtModel4;
+            checkForModel2.TextRegex = null;
+            settingsModel2.SearchFor = checkForModel2;
+            skipModel2.Condition = ResourceChecker.Models.Enums.Condition.Contains;
+            skipModel2.Text = null;
+            settingsModel2.Skip = skipModel2;
+            this.settingsControl.SettingsModel = settingsModel2;
             this.settingsControl.Size = new System.Drawing.Size(786, 429);
             this.settingsControl.TabIndex = 1;
             // 
@@ -178,7 +181,14 @@
             // 
             this.defaultLookAndFeel1.LookAndFeel.SkinName = "Visual Studio 2013 Light";
             // 
-            // Form1
+            // StartCheking
+            // 
+            this.StartCheking.Caption = "Start Cheking";
+            this.StartCheking.Id = 49;
+            this.StartCheking.Name = "StartCheking";
+            this.StartCheking.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.StartCheking_ItemClick);
+            // 
+            // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -186,7 +196,7 @@
             this.Controls.Add(this.navigationFrame);
             this.Controls.Add(this.ribbonStatusBar);
             this.Controls.Add(this.ribbonControl);
-            this.Name = "Form1";
+            this.Name = "MainForm";
             this.Ribbon = this.ribbonControl;
             this.StatusBar = this.ribbonStatusBar;
             ((System.ComponentModel.ISupportInitialize)(this.tabbedView)).EndInit();
@@ -215,5 +225,6 @@
         private DevExpress.XtraBars.Navigation.NavigationPage SettingPage;
         private Controls.SettingsControl settingsControl;
         private Controls.ResultControl resultControl;
+        private DevExpress.XtraBars.BarButtonItem StartCheking;
     }
 }
